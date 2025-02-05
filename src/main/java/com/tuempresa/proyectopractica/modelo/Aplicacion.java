@@ -16,7 +16,7 @@ public class Aplicacion {
     private String codigo;
     
     @Column(length=50)
-    private String denominacion;
+    private String aplicacion;
 
 	@ManyToMany(mappedBy="aplicaciones")
 	private Collection<Cliente> clientes;

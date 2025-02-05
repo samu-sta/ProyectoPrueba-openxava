@@ -10,9 +10,9 @@ import lombok.*;
 public class Licencia {
     @Id
     @Column(length=10)
-    private String id; 
+    private String codigo; 
 
-    private Date fechaExpiracion;
+    private Date fechaDeExpiracion;
 
     @Column(length=50)
     private String observaciones;
