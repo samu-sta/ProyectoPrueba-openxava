@@ -24,7 +24,5 @@ public class Cliente {
         joinColumns=@JoinColumn(name="cliente_id"),
         inverseJoinColumns=@JoinColumn(name="aplicacion_id")
     )
-
-	@ListProperties("codigo, denominacion")
 	private Collection<Aplicacion> aplicaciones;
 }
