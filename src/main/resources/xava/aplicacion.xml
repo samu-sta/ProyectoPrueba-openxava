@@ -2,7 +2,7 @@
 
 <!DOCTYPE aplicacion SYSTEM "dtds/aplicacion.dtd">
 
-<aplicacion nombre="proyectopractica"> 
+<aplicacion nombre="registrodeaplicaciones"> 
 	
 	<!--
 	Un módulo por defecto se asume para cada

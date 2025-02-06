@@ -16,11 +16,11 @@ https://github.com/openxava/openxava/blob/master/openxavatest/src/main/resources
 <controladores>
     
     <!-- Variable de entorno: 
-    <var-entorno nombre="proyectopractica_ANYO_DEFECTO" valor="2015"/>
+    <var-entorno nombre="registrodeaplicaciones_ANYO_DEFECTO" valor="2015"/>
     -->
     
     <!-- Objeto de sesión:
-    <Objeto nombre="proyectopractica_anyoActivo" clase="java.lang.Integer" valor="2015" 
+    <Objeto nombre="registrodeaplicaciones_anyoActivo" clase="java.lang.Integer" valor="2015" 
             ambito="global"/>
     -->
     

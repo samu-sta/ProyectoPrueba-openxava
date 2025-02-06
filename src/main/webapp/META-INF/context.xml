@@ -17,74 +17,75 @@
 	correspodiente a tu base de datos al pom.xml de tu proyecto.	
 	-->
 	 
-	<!-- HSQLDB  	
-    <Resource name="jdbc/proyectopracticaDS" auth="Container" type="javax.sql.DataSource"
+	<!-- HSQLDB -->   	
+    <Resource name="jdbc/registrodeaplicacionesDS" auth="Container" type="javax.sql.DataSource"
 	      maxTotal="20" maxIdle="5" maxWaitMillis="10000"
 	      username="sa" password="" 
 	      driverClassName="org.hsqldb.jdbc.JDBCDriver"
 	      url="jdbc:hsqldb:hsql://localhost:1666"/>
-	-->     
+	      
 	<!-- MySQL       
-    <Resource name="jdbc/proyectopracticaDS" auth="Container" type="javax.sql.DataSource"
+    <Resource name="jdbc/registrodeaplicacionesDS" auth="Container" type="javax.sql.DataSource"
 	      maxTotal="20" maxIdle="5" maxWaitMillis="10000"
 	      username="root" password="" 
 	      driverClassName="com.mysql.cj.jdbc.Driver"
-	      url="jdbc:mysql://localhost:3306/proyectopracticadb"/>	      
+	      url="jdbc:mysql://localhost:3306/registrodeaplicacionesdb"/>	      
 	-->      
 	
-
-	<Resource name="jdbc/proyectopracticaDS" auth="Container" type="javax.sql.DataSource"
+	<!-- PostgreSQL 
+	<Resource name="jdbc/registrodeaplicacionesDS" auth="Container" type="javax.sql.DataSource"
 	      maxTotal="20" maxIdle="5" maxWaitMillis="10000"
-	      username="postgres" password="8255" 
+	      username="postgres" password="" 
 	      driverClassName="org.postgresql.Driver" 
-	      url="jdbc:postgresql://localhost/proyectopracticadb"/>
+	      url="jdbc:postgresql://localhost/registrodeaplicacionesdb"/>
+	-->
 	
 	<!-- Oracle 
-	<Resource name="jdbc/proyectopracticaDS" auth="Container" type="javax.sql.DataSource"
+	<Resource name="jdbc/registrodeaplicacionesDS" auth="Container" type="javax.sql.DataSource"
 	      maxTotal="20" maxIdle="5" maxWaitMillis="10000"
 	      username="user" password="" 
 	      driverClassName="oracle.jdbc.OracleDriver"
-	      url="jdbc:oracle:thin:@localhost:1521:proyectopracticadb"/>
+	      url="jdbc:oracle:thin:@localhost:1521:registrodeaplicacionesdb"/>
 	-->	
 	
 	<!-- AS/400 
-	<Resource name="jdbc/proyectopracticaDS" auth="Container" type="javax.sql.DataSource"
+	<Resource name="jdbc/registrodeaplicacionesDS" auth="Container" type="javax.sql.DataSource"
 	      maxTotal="20" maxIdle="5" maxWaitMillis="10000"
 	      username="user" password="" 
 	      driverClassName="com.ibm.as400.access.AS400JDBCDriver" 
-	      url="jdbc:as400:localhost/proyectopracticalib"/>
+	      url="jdbc:as400:localhost/registrodeaplicacioneslib"/>
 	-->
 	
 	<!-- Microsoft SQL Server
-	<Resource name="jdbc/proyectopracticaDS" auth="Container" type="javax.sql.DataSource"
+	<Resource name="jdbc/registrodeaplicacionesDS" auth="Container" type="javax.sql.DataSource"
 	      maxTotal="20" maxIdle="5" maxWaitMillis="10000"
 	      username="user" password="" 
 	      driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver" 
-	      url="jdbc:sqlserver://localhost:1433;databaseName=proyectopracticadb"/>
+	      url="jdbc:sqlserver://localhost:1433;databaseName=registrodeaplicacionesdb"/>
 	-->
 	
 	<!-- Informix
-	<Resource name="jdbc/proyectopracticaDS" auth="Container" type="javax.sql.DataSource"
+	<Resource name="jdbc/registrodeaplicacionesDS" auth="Container" type="javax.sql.DataSource"
 	      maxTotal="20" maxIdle="5" maxWaitMillis="10000"
 	      username="user" password="" 
 	      driverClassName="com.informix.jdbc.IfxDriver"
-	      url="jdbc:informix-sqli://localhost:1533/proyectopracticadb:INFORMIXSERVER=tuservidor"/>
+	      url="jdbc:informix-sqli://localhost:1533/registrodeaplicacionesdb:INFORMIXSERVER=tuservidor"/>
 	-->            
 	
 	<!-- Db2
-	<Resource name="jdbc/proyectopracticaDS" auth="Container" type="javax.sql.DataSource"
+	<Resource name="jdbc/registrodeaplicacionesDS" auth="Container" type="javax.sql.DataSource"
 	      maxTotal="20" maxIdle="5" maxWaitMillis="10000"
 	      username="user" password="" 
 	      driverClassName="com.ibm.db2.jcc.DB2Driver"
-	      url="jdbc:db2://localhost:50000/proyectopracticadb"/>
+	      url="jdbc:db2://localhost:50000/registrodeaplicacionesdb"/>
 	-->
 	
 	<!-- Firebird
-	<Resource name="jdbc/proyectopracticaDS" auth="Container" type="javax.sql.DataSource"
+	<Resource name="jdbc/registrodeaplicacionesDS" auth="Container" type="javax.sql.DataSource"
 	      maxTotal="20" maxIdle="5" maxWaitMillis="10000"
 	      username="user" password="" 
 	      driverClassName="org.firebirdsql.jdbc.FBDriver"
-	      url="jdbc:firebirdsql://localhost:3050/c:/db/proyectopractica.fdb"/>
+	      url="jdbc:firebirdsql://localhost:3050/c:/db/registrodeaplicaciones.fdb"/>
 	-->
 	                  	      
 </Context>
