@@ -17,6 +17,4 @@ public class Licencia {
     @Column(length=50)
     private String observaciones;
 
-    private boolean activa;
-
 }
