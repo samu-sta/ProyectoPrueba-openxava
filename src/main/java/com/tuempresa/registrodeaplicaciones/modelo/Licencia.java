@@ -4,8 +4,12 @@ import java.util.*;
 
 import javax.persistence.*;
 
-import lombok.*;
+import org.openxava.annotations.*;
 
+import lombok.*;
+@Tab(
+    properties="codigo, cliente.denominacion, aplicacion.denominacion, fechaDeExpiracion, activa"
+)
 @Entity @Getter @Setter
 public class Licencia {
     @Id
@@ -17,4 +21,14 @@ public class Licencia {
     @Column(length=50)
     private String observaciones;
 
+    @Required
+    @OneToOne(fetch=FetchType.LAZY, optional = true)
+    private Aplicacion aplicacion;
+
+    @Required
+    @OneToOne(fetch=FetchType.LAZY, optional = true)
+    private Cliente cliente;
+
+    @Required
+    private Boolean activa;
 }

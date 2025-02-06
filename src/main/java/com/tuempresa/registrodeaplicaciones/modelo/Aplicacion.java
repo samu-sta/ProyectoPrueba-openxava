@@ -4,9 +4,8 @@ import java.util.*;
 
 import javax.persistence.*;
 
-import org.openxava.annotations.*;
-
 import lombok.*;
+
 
 @Entity @Getter @Setter
 public class Aplicacion {
@@ -21,9 +20,7 @@ public class Aplicacion {
 	@ManyToMany(mappedBy="aplicaciones")
 	private Collection<Cliente> clientes;
 
-	@Required
-    @OneToOne(fetch=FetchType.LAZY, optional = true)
-    private Licencia licencia;
+	
 
 	
 
