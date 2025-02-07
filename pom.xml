@@ -100,13 +100,25 @@
 		</dependency>
 		-->
 		
-	</dependencies>
+	
+   <dependency>
+     <groupId>com.ibm.icu</groupId>
+     <artifactId>icu4j</artifactId>
+     <version>64.2</version>
+   </dependency>
+ </dependencies>
 
 	<build>
 		<finalName>registrodeaplicaciones</finalName>
 		<plugins>
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
+	
+   <dependency>
+     <groupId>com.ibm.icu</groupId>
+     <artifactId>icu4j</artifactId>
+     <version>64.2</version>
+   </dependency>
+ 			<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
 				<executions>
 					<execution>

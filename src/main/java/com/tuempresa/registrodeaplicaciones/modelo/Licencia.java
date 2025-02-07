@@ -6,11 +6,14 @@ import javax.persistence.*;
 
 import org.openxava.annotations.*;
 
+import com.tuempresa.registrodeaplicaciones.listeners.*;
+
 import lombok.*;
 @Tab(
     properties="codigo, cliente.denominacion, aplicacion.denominacion, fechaDeExpiracion, activa"
 )
 @Entity @Getter @Setter
+@EntityListeners(LicenciaListener.class)
 public class Licencia {
     @Id
     @Column(length=10)
@@ -31,4 +34,8 @@ public class Licencia {
 
     @Required
     private Boolean activa;
+
+
+
+
 }
