@@ -4,11 +4,17 @@ import java.util.*;
 
 import javax.persistence.*;
 
+import org.openxava.annotations.*;
+
 import com.tuempresa.registrodeaplicaciones.acciones.*;
 
 import lombok.*;
 
 @Entity @Getter @Setter
+@Views({
+    @View(name="Simple", members="codigo; denominacion; email"),
+    @View(members="codigo; denominacion; email; aplicaciones")
+})
 public class Cliente {
 	
 	@Id
@@ -39,4 +45,7 @@ public class Cliente {
             // Log error
         }
     }
+
+    @OneToMany(mappedBy="cliente")
+    private Collection<Licencia> licencias;
 }

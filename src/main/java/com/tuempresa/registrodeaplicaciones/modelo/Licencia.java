@@ -25,10 +25,12 @@ public class Licencia {
     private String observaciones;
 
     @Required
+    @ReferenceView("Simple")
     @OneToOne(fetch=FetchType.LAZY, optional = true)
     private Aplicacion aplicacion;
 
     @Required
+    @ReferenceView("Simple")
     @OneToOne(fetch=FetchType.LAZY, optional = true)
     private Cliente cliente;
 

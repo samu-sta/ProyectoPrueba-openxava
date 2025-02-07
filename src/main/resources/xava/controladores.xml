@@ -34,7 +34,13 @@ https://github.com/openxava/openxava/blob/master/openxavatest/src/main/resources
 
     <!-- Custom Save Action -->
 
-
+    <controlador nombre="Cliente">
+        <hereda-de controlador="Typical"/>
+        <accion nombre="generarReporte"
+                clase="com.tuempresa.registrodeaplicaciones.acciones.GenerarReporteLicenciasAccion"
+                modo="detail"
+                etiqueta="Generar Reporte"/>
+    </controlador>
 
     
 
