@@ -11,6 +11,11 @@
 	<modulo-defecto>		  
 		<controlador nombre="Typical"/>		
 	</modulo-defecto>
+
+	<modulo nombre="LicenciaDashboard">
+        <modelo nombre="LicenciaDashboard"/>
+        <controlador nombre="InitModelWithNewInstance"/>
+    </modulo>
 	
 	<!--
 	Podemos definir m�dulos adicionales, por ejemplo: 	

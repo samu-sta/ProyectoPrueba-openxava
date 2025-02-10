@@ -1,5 +1,6 @@
 package com.tuempresa.registrodeaplicaciones.modelo;
 
+import java.math.BigDecimal;
 import java.util.*;
 
 import javax.persistence.*;
@@ -10,7 +11,7 @@ import com.tuempresa.registrodeaplicaciones.listeners.*;
 
 import lombok.*;
 @Tab(
-    properties="codigo, cliente.denominacion, aplicacion.denominacion, fechaDeExpiracion, activa"
+    properties="codigo, cliente.denominacion, aplicacion.denominacion, importe, fechaDeExpiracion, activa"
 )
 @Entity @Getter @Setter
 @EntityListeners(LicenciaListener.class)
@@ -36,6 +37,8 @@ public class Licencia {
 
     @Required
     private Boolean activa;
+
+    private BigDecimal importe;
 
 
 

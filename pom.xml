@@ -113,11 +113,6 @@
 		<plugins>
 			<plugin>
 	
-   <dependency>
-     <groupId>com.ibm.icu</groupId>
-     <artifactId>icu4j</artifactId>
-     <version>64.2</version>
-   </dependency>
  			<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
 				<executions>
