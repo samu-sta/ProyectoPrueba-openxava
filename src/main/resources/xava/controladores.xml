@@ -32,7 +32,6 @@ https://github.com/openxava/openxava/blob/master/openxavatest/src/main/resources
     </controlador>
     -->
 
-    <!-- Custom Save Action -->
 
     <controlador nombre="Cliente">
         <hereda-de controlador="Typical"/>
@@ -41,6 +40,13 @@ https://github.com/openxava/openxava/blob/master/openxavatest/src/main/resources
                 modo="detail"
                 etiqueta="Generar Reporte"/>
     </controlador>
+
+    <controlador nombre="LicenciaDashboard">
+        <accion nombre="alCargarLicenciaDashboard" por-defecto="nunca" oculta="true" despues-de-cada-peticion="true"
+            clase="com.tuempresa.registrodeaplicaciones.acciones.AlCargarLicenciaDashboard"/>
+    </controlador>
+
+
 
     
 

@@ -8,13 +8,14 @@
 	Un m�dulo por defecto se asume para cada
 	controlador en <modulo-defecto/> 
 	-->
-	<modulo-defecto>		  
-		<controlador nombre="Typical"/>		
-	</modulo-defecto>
+	<modulo-defecto>        
+        <controlador nombre="Typical"/>        
+    </modulo-defecto>
 
 	<modulo nombre="LicenciaDashboard">
         <modelo nombre="LicenciaDashboard"/>
-        <controlador nombre="InitModelWithNewInstance"/>
+        <controlador nombre="LicenciaDashboard"/>
+		<controlador-modo nombre="DetailOnly"/>
     </modulo>
 	
 	<!--

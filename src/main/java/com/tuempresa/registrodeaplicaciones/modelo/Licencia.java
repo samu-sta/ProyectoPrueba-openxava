@@ -38,6 +38,7 @@ public class Licencia {
     @Required
     private Boolean activa;
 
+    @Required
     private BigDecimal importe;
 
 
