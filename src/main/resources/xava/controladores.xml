@@ -32,9 +32,15 @@ https://github.com/openxava/openxava/blob/master/openxavatest/src/main/resources
     </controlador>
     -->
 
+    <controlador nombre="CustomTypical">
+        <hereda-de controlador="Typical"/>
+        <accion nombre="importData" oculta="true" modo="ALL"/>
+        <accion nombre="refresh" oculta="true" modo="ALL"/>
+        <accion nombre="cut" oculta="true" modo="ALL"/>
+    </controlador>
 
     <controlador nombre="Cliente">
-        <hereda-de controlador="Typical"/>
+        <hereda-de controlador="CustomTypical"/>
         <accion nombre="generarReporte"
                 clase="com.tuempresa.registrodeaplicaciones.acciones.GenerarReporteLicenciasAccion"
                 modo="detail"

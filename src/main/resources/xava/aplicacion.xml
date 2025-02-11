@@ -9,14 +9,14 @@
 	controlador en <modulo-defecto/> 
 	-->
 	<modulo-defecto>        
-        <controlador nombre="Typical"/>        
+        <controlador nombre="CustomTypical"/>        
     </modulo-defecto>
 
 	<modulo nombre="LicenciaDashboard">
-        <modelo nombre="LicenciaDashboard"/>
-        <controlador nombre="LicenciaDashboard"/>
+		<modelo nombre="LicenciaDashboard"/>
+		<controlador nombre="LicenciaDashboard"/>
 		<controlador-modo nombre="DetailOnly"/>
-    </modulo>
+  </modulo>
 	
 	<!--
 	Podemos definir m�dulos adicionales, por ejemplo: 	
