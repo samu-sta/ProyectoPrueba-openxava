@@ -9,6 +9,8 @@ import org.openxava.annotations.*;
 import lombok.*;
 
 
+
+
 @Entity @Getter @Setter
 @Views({
     @View(name="Simple", members="codigo; denominacion"),
@@ -24,10 +26,6 @@ public class Aplicacion {
     private String denominacion;
 
 	@ManyToMany(mappedBy="aplicaciones")
-	private Collection<Cliente> clientes;
-
-	
-
-	
+    private Collection<Cliente> clientes;
 
 }

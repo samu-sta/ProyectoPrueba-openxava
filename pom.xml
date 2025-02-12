@@ -42,14 +42,13 @@
     		<version>9.1.0</version>
 		</dependency>
 		-->
-		
-		<!-- PostgreSQL 
+
 		<dependency>
 			<groupId>org.postgresql</groupId>
     		<artifactId>postgresql</artifactId>
     		<version>42.7.4</version>
 		</dependency>
-		-->
+
 		
 		<!-- Oracle 
 		<dependency>
