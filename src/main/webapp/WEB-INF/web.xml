@@ -4,7 +4,6 @@
 
 <web-app>
   <display-name>OpenXava Application</display-name>
-  
   <!-- Para cumplir con OWASP -->
   <error-page>
     <error-code>404</error-code>
@@ -14,5 +13,4 @@
     <error-code>500</error-code>
     <location>/WEB-INF/error500.html</location>
   </error-page>
-  
 </web-app>

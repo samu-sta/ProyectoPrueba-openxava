@@ -1,3 +1,8 @@
 /*
 Pon aqu� tu propio estilo
 */
+
+#map {
+    height: 400px;
+    width: 100%;
+}
